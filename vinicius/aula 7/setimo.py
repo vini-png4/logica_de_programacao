@@ -29,22 +29,22 @@
 # Tratamento de Erros
 # Revisão do código
 
-print("Bem vindo ao Shopping Limeira")
+# print("Bem vindo ao Shopping Limeira")
 
-opcao_desejada = input("Digite a opção desejada")
+# opcao_desejada = input("Digite a opção desejada")
 
-if opcao_desejada == "Ticket":
-    print("Retire seu ticket")
+# if opcao_desejada == "Ticket":
+#     print("Retire seu ticket")
 
 
-elif opcao_desejada == "Tag":
-    print("Acesso Liberado ")
+# elif opcao_desejada == "Tag":
+#     print("Acesso Liberado ")
 
-elif opcao_desejada == "Interfone":
-    print("Ligando...")
+# elif opcao_desejada == "Interfone":
+#     print("Ligando...")
 
-else:
-    print("Encerrando o Sistema")
+# else:
+#     print("Encerrando o Sistema")
 
 
 # Modelo Correto 
