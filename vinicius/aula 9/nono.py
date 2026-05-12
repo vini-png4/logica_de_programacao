@@ -17,5 +17,5 @@ elif pecas == peça2:
     print("virando a 180° e entregando a peça solicitada ao Bruno ")
 
 else:
-    print("Falha no sistema cor não identificada. Por favor peça as cores disponiveis ")
+    print("Falha no sistema cor não identificada. Por favor escolha somente as cores disponiveis ")
 

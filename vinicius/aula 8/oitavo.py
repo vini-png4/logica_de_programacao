@@ -7,32 +7,32 @@
 
 # Corrigido 
 
-# idade = int(input("Qual é sua idade? :"))
-# if idade >= 18:
-#     print ("Acesso liberado")
-# else:
-#     print("Acesso negado!")
+idade = int(input("Qual é sua idade? :"))
+if idade >= 18:
+    print ("Acesso liberado")
+else:
+    print("Acesso negado!")
 
 # melhorado 
 
-# idade = int(input("Digite sua idade:"))
-# if idade >= 18:
-#     print("Você é maior de idade")
-# else: 
-#  print("Você é menor de idade ")
+idade = int(input("Digite sua idade:"))
+if idade >= 18:
+    print("Você é maior de idade")
+else: 
+ print("Você é menor de idade ")
 
 #  2. A Escrita Fiel
 # nome = "Mariana"
 # print("Seja bem-vinda, nome!")
 
 # Corrigido 
-# nome = input("Digite seu nome")
-# print(f"Seja Bem-Vinda, {nome}!")
+nome = input("Digite seu nome")
+print(f"Seja Bem-Vinda, {nome}!")
 
 # Melhorado
 
-# nome = input("Digite seu nome")
-# print ("Seja bem_vinda, {nome}!")
+nome = input("Digite seu nome")
+print ("Seja bem_vinda, {nome}!")
 
 # 3. Falta de Espaço
 # numero = 10
@@ -43,11 +43,11 @@
 
 # Corrigido
 
-# numero = 10
-# if numero > 5:
-#   print("O número é maior que cinco.")
-# else:
-#   print("O número é menor ou igual a cinco.")
+numero = 10
+if numero > 5:
+  print("O número é maior que cinco.")
+else:
+  print("O número é menor ou igual a cinco.")
 
 # Melhorado
 
@@ -59,11 +59,11 @@
 
 # Corrigido
 
-# usuario = "aluno123"
-# if usuario == "aluno123":
-#    print("usuario autorizado")
-# else:
-#   print("Login realizado com sucesso.")
+usuario = "aluno123"
+if usuario == "aluno123":
+   print("usuario autorizado")
+else:
+  print("Login realizado com sucesso.")
 
 # Melhorado
 
@@ -75,12 +75,12 @@
 
 # Corrigido
 
-# clima = "ensolarado"
-# if clima == "chuvoso":
-#  print("Leve um guarda-chuva!")
+clima = "ensolarado"
+if clima == "chuvoso":
+ print("Leve um guarda-chuva!")
 
-# else:
-#  print("Sistema encerrado")
+else:
+ print("Sistema encerrado")
 
 # Melhorado
 
@@ -89,8 +89,8 @@
 # print("Parabéns! Você fez " + pontos + " pontos.")
 
 # Corrigido
-# pontos = 50
-# print("Parabéns! Você fez ", pontos ," pontos.")
+pontos = 50
+print("Parabéns! Você fez ", pontos ," pontos.")
 
 # Melhorado
 
@@ -103,13 +103,13 @@
 # print("Excelente!")
 
 # Corrigido
-# nota = 9.5
+nota = 9.5
 
-# if nota >= 9:
-#  print("Excelente!")
+if nota >= 9:
+ print("Excelente!")
 
-# elif nota >= 7:
-#  print("Aprovado")
+elif nota >= 7:
+ print("Aprovado")
 
 # Melhorado
 
@@ -120,8 +120,8 @@
 
 # Corrigido
 
-# for i in range(1, 6):
-#  print(i)
+for i in range(1, 6):
+ print(i)
 
 # Melhorado 
 
@@ -132,10 +132,10 @@
 # O código deveria parar após 3 tentativas
 
 # Corrigido 
-# tentativas = 1
-# while tentativas <= 3:
-#  tentativas +=1
-#  print("Tentando conectar...")
+tentativas = 1
+while tentativas <= 3:
+ tentativas +=1
+ print("Tentando conectar...")
  
 # Melhorado
 
@@ -148,8 +148,8 @@
 
 # Corrigido
 
-# senha = input("Digite sua senha")
-# while senha == "python123":
-#  senha = input("Digite a senha secreta: ")
-#  print("Acesso concedido!") 
-#  break 
+senha = input("Digite sua senha")
+while senha == "python123":
+ senha = input("Digite a senha secreta: ")
+ print("Acesso concedido!") 
+ break 
