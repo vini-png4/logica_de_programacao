@@ -49,30 +49,116 @@
 
 # Modelo Correto 
 
+# print("Bem-Vindo ao Shopping")
+# print("Escolha as opções")
+# print(" 1 - Ticket \n 2 - Tag \n 3 - Interforne")
+# metodo_entrada = input("Ticket / Tag / Interfone")
+
+# while True:
+#     try:
+    
+#         numero = int(input("Digite um numero")) 
+#         resultado = 10 / numero
+#         print(f"O resultado é: {resultado}")
+
+#     except Exception as erro:
+#         print(f"Ocorreu um erro inesperado: {erro}")
+#         break
+
+#     except NameError:
+#         print("Erro: Variável não definida.")
+#         continue
+
+#     except KeyboardInterrupt:
+#         print("\nPrograma interrompido pelo usuário.")
+#         break
+
+# if metodo_entrada == "Ticket":
+#     print("Bem-Vindo ao Shopping")
+#     hora_entrada = float(input("Digite a hora de entrada"))
+#     valor_estacionamento = float(input("Digite o valor a cobrar"))
+#     hora_saida = float(input("Digite a hora de saida"))
+#     total_permanencia = hora_saida - hora_entrada
+#     print(f"Seu tempo de permanência {total_permanencia:.2f} em horas ")
+#     total_estacionamento = total_permanencia * valor_estacionamento
+#     print(f"O valor a ser cobrado foi de R${total_estacionamento:.2f}")
+
+# elif metodo_entrada == "Tag":
+#     print("Bem-Vindo ao Shopping")
+#     print("Sua permanência no Shopping será cobrada na sua fatura")
+
+# elif metodo_entrada == "Interfone":
+#     print("Bem-Vindo ao Shopping")
+#     print("Liberando acesso pelo Interfone")
+#     print("Sua saída deverá ser feita também pelo Interfone")
+
+# else:
+#     print("Obrigado pela visita")
+  
+
+
+
+
+
+# versão 2.0
+
 print("Bem-Vindo ao Shopping")
-print("Escolha as opções")
-print(" 1 - Ticket \n 2 - Tag \n 3 - Interforne")
-metodo_entrada = input("Ticket / Tag / Interfone")
+print("Escolha as opções:")
+print(" 1 - Ticket \n 2 - Tag \n 3 - Interfone")
+
+opcao = input("Digite o número (1, 2 ou 3) ou o nome da opção: ").strip().capitalize()
+
+metodo_entrada = ""
+if opcao == "1" or opcao == "Ticket":
+    metodo_entrada = "Ticket"
+elif opcao == "2" or opcao == "Tag":
+    metodo_entrada = "Tag"
+elif opcao == "3" or opcao == "Interfone":
+    metodo_entrada = "Interfone"
+
+print("\n--- Teste de Divisão ---")
+while True:
+    try:
+        numero = int(input("Digite um numero: ")) 
+        resultado = 10 / numero
+        print(f"O resultado é: {resultado}")
+        break
+
+    except NameError:
+        print("Erro: Variável não definida.")
+        continue
+
+    except KeyboardInterrupt:
+        print("\nPrograma interrompido pelo usuário.")
+        break
+
+    except Exception as erro:
+        print(f"Ocorreu um erro inesperado: {erro}")
+        break
+
+
+print("\n--- Fluxo do Shopping ---")
+
+if metodo_entrada in ["Ticket", "Tag", "Interfone"]:
+    print("Bem-Vindo ao Shopping")
 
 if metodo_entrada == "Ticket":
-    print("Bem-Vindo ao Shopping")
-    hora_entrada = float(input("Digite a hora de entrada"))
-    valor_estacionamento = float(input("Digite o valor a cobrar"))
-    hora_saida = float(input("Digite a hora de saida"))
+    hora_entrada = float(input("Digite a hora de entrada (ex: 14.5): "))
+    valor_estacionamento = float(input("Digite o valor a cobrar por hora: "))
+    hora_saida = float(input("Digite a hora de saida (ex: 16.5): "))
+    
     total_permanencia = hora_saida - hora_entrada
     print(f"Seu tempo de permanência {total_permanencia:.2f} em horas ")
+    
     total_estacionamento = total_permanencia * valor_estacionamento
     print(f"O valor a ser cobrado foi de R${total_estacionamento:.2f}")
 
 elif metodo_entrada == "Tag":
-    print("Bem-Vindo ao Shopping")
     print("Sua permanência no Shopping será cobrada na sua fatura")
 
 elif metodo_entrada == "Interfone":
-    print("Bem-Vindo ao Shopping")
     print("Liberando acesso pelo Interfone")
     print("Sua saída deverá ser feita também pelo Interfone")
 
 else:
-    print("Obrigado pela visita")
-  
+    print("Obrigado pela vvisita")
