@@ -1,2 +1,0 @@
-print ("Meus Hobbies são:")                      
-print ("desenhar na aquarela animais e objetos\n jogar Genshim Impact \n Hogwarts Legacy\n passear com minha cadela rubi\n ler livros de Harry Potter")

@@ -1,1 +1,0 @@
-Shutdown -s -t 3600 -c "Desligamento programado para daqui a 1 hora. salve seu trabalho'"
