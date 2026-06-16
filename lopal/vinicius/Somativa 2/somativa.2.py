@@ -281,53 +281,53 @@
 
 # Janela.mainloop()
 
-import tkinter as tk
-from tkinter import messagebox
+# import tkinter as tk
+# from tkinter import messagebox
 
-Janela = tk.Tk()
-Janela.title("Contagem Regressiva da Prensa")
-Janela.geometry("200x200")
-Janela.configure(bg="#555555")
+# Janela = tk.Tk()
+# Janela.title("Contagem Regressiva da Prensa")
+# Janela.geometry("200x200")
+# Janela.configure(bg="#555555")
 
-def iniciar_contagem():
+# def iniciar_contagem():
 
-    try:
-        for i in range(10, 0, -1):
-            lbl_contagem.config(text=f"Iniciando em: {i}")
-            Janela.update()
-            Janela.after(1000)
+#     try:
+#         for i in range(10, 0, -1):
+#             lbl_contagem.config(text=f"Iniciando em: {i}")
+#             Janela.update()
+#             Janela.after(1000)
 
-        lbl_contagem.config(text="Prensa Ativada!")
+#         lbl_contagem.config(text="Prensa Ativada!")
 
-        messagebox.showinfo(
-            "Resultado",
-            "Prensa ativada com sucesso!"
-        )
+#         messagebox.showinfo(
+#             "Resultado",
+#             "Prensa ativada com sucesso!"
+#         )
 
-    except Exception:
-        messagebox.showerror(
-            "Erro",
-            "Ocorreu um erro durante a contagem."
-        )
+#     except Exception:
+#         messagebox.showerror(
+#             "Erro",
+#             "Ocorreu um erro durante a contagem."
+#         )
 
-lbl_contagem = tk.Label(
-    Janela,
-    text="Pronto para iniciar",
-    font=("Arial", 14),
-    bg="#FF0000"
-)
-lbl_contagem.grid(row=0, column=0, padx=10, pady=20)
+# lbl_contagem = tk.Label(
+#     Janela,
+#     text="Pronto para iniciar",
+#     font=("Arial", 14),
+#     bg="#FF0000"
+# )
+# lbl_contagem.grid(row=0, column=0, padx=10, pady=20)
 
-btn_iniciar = tk.Button(
-    Janela,
-    text="Iniciar",
-    command=iniciar_contagem,
-    bg="#FF0000",
-    fg="white"
-)
-btn_iniciar.grid(row=1, column=0, padx=10, pady=10)
+# btn_iniciar = tk.Button(
+#     Janela,
+#     text="Iniciar",
+#     command=iniciar_contagem,
+#     bg="#FF0000",
+#     fg="white"
+# )
+# btn_iniciar.grid(row=1, column=0, padx=10, pady=10)
 
-Janela.mainloop()
+# Janela.mainloop()
 
 
 

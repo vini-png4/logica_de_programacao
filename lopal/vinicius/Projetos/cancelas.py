@@ -161,4 +161,4 @@ elif metodo_entrada == "Interfone":
     print("Sua saída deverá ser feita também pelo Interfone")
 
 else:
-    print("Obrigado pela vvisita")
+    print("Obrigado pela visita")

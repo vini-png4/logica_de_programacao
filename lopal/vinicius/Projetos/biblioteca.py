@@ -66,25 +66,23 @@ janela.title("Exemplo 2")
 janela.geometry("300x300")
 janela.configure(bg="#CA996F")
 
-# Componentes
-# Labels
 lbl_mensagem = tk.Label(janela, text="Digite seu nome :)")
 lbl_mensagem.grid(row=0, column=0, pady=10, padx=10)
 lbl_mensagem.configure(bg="#754D2A")
 lbl_idade = tk.Label(janela, text="Digite sua idade :)")
 lbl_idade.grid(row=1, column=0, pady=10, padx=10)
 lbl_idade.configure(bg="#754D2A")
-# Entrys
+
 nome_usuario = tk.Entry(janela, font=("Arial", 12))
 nome_usuario.grid(row=0, column=1, pady=10, padx=10)
 idade_usuario = tk.Entry(janela, font=("Arial", 12))
 idade_usuario.grid(row=1, column=1, pady=10, padx=10)
 
-#Selections
+
 sel_nivel = tk.Spinbox(janela, from_=1, to=10, width=10)
 sel_nivel.grid(row=2, column=1, pady=10, padx=10)
 
-# ComboBox
+
 combo_nivel = tk.ttk.Combobox(janela, values=["Fácil", "Médio", "Difícil"], width=10)
 combo_nivel.grid(row=3, column=1, pady=10, padx=10)
 
@@ -96,7 +94,6 @@ btn_mensagem.configure(bg="#754D2A")
 btn_segunda_janela = tk.Button(janela, text="Abrindo Segunda Janela", command=segunda_janela)
 btn_segunda_janela.grid(row=3, column=0, pady=10, padx=10)
 btn_segunda_janela.configure(bg="#754D2A")
-
-# Rodar interface
+e
 janela.mainloop()
 
